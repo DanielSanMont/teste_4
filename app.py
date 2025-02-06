@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 
+
 sg.theme('reddit')
 
 janela_principal = [
@@ -12,7 +13,7 @@ janela_principal = [
     [sg.Button('Salvar')],
 ]
 
-janela = sg.Window('Principal',layout=janela_principal)
+janela = sg.Window('Principal', layout=janela_principal)
 
 while True:
     event, values = janela.read()
@@ -23,4 +24,3 @@ while True:
         senha = values['senha']
         caminho_pasta_anexos = values['input_anexos']
         caminho_pasta_planilha = values['input_planilha']
-       
